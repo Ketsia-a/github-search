@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "IP2"
+    }
+  },
+  "defaultProject": "IP2",
+  "cli": {
+    "analytics": "c42fc34b-96cb-463a-9083-e49d0a2f6fd0"
+  }
 }
