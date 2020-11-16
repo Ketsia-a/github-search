@@ -14,9 +14,7 @@ export class UserComponent implements OnInit {
       ()=>{
         this.user=this.userService.user;
       },
-      (error)=>{
-        console.log(error)
-      }
+      
     )
   }
   ngOnInit(): void {

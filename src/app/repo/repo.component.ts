@@ -15,9 +15,7 @@ export class RepoComponent implements OnInit {
       ()=>{
         this.repo=this.repositoryService.repository;
       },
-      (error)=>{
-        console.log(error)
-      }
+
     )
   }
   ngOnInit(): void {

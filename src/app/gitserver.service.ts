@@ -37,12 +37,7 @@ export class GitserverService {
         this.user.following = response.following
         this.user.created_at = response.created_at
         resolve()
-      },
-        error => {
-        
-          this.user.login = '2020 error'
-          reject(error);
-        })
+      },)
     })
     return promise
   }
@@ -63,9 +58,7 @@ export class GitserverService {
         }
         resolve()
       },
-        error => {
-          console.log(error);
-        })
+      )
     })
     return promise
   }
