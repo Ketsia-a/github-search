@@ -6,7 +6,7 @@
 * Project description
 * Contact information 
 * Sneak pic
-* Known bugs
+* link to live site
 * Technologies used
 
 #  *Ketsia Iragena*
@@ -19,6 +19,8 @@ This is a search website that allows a user to navigate through it while wearchi
   # Contact information
    Email me at: iraketsia2001@gmail.com
    Call at : 0787802518
+ # below isthe link to the live site
+ https://ketsia-a.github.io/githubsearch
  # technologies used 
  angular
  css 
