@@ -1,10 +1,13 @@
 <app-form (emittextsearch)="reposearch($event)"></app-form>
-<div class="card" *ngFor="let repo of repo" class="card m-2" style="width: 22rem;" class="hello">
-    <div class="card-body">
-        <h5 class="card-title">Repo Name:{{repo.name}} </h5>
-        <hr>
-        <div class="card-text">
-            <p>Description :{{repo.description}}</p>
+<div class="one">
+    <div class="card" *ngFor="let repo of repo" class="card m-2">
+        <div class="card-body">
+            <h5 class="card-title">Repo Name:{{repo.name}} </h5>
+            <hr>
+            <div class="card-text">
+                <p>Description :{{repo.description}}</p>
+            </div>
+            <a id='url' href="{{repo.html_url}}"><i class="fas fa-code-branch"></i>&nbsp;{{repo.html_url}}</a>
         </div>
     </div>
 </div>
