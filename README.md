@@ -1,5 +1,32 @@
 # IP2
 
+### Contents
+---
+* Author's name
+* Project description
+* Contact information 
+* Sneak pic
+* Known bugs
+* Technologies used
+
+#  *Ketsia Iragena*
+## Github Search
+This is a search website that allows a user to navigate through it while wearching for a specific account or repository. 
+  #### Sneak pic
+  ![click here](https://github.com/Ketsia-a/githubsearch/blob/master/src/assets/Screenshot%20from%202020-11-16%2007-30-29.png)
+  ![click here](https://github.com/Ketsia-a/githubsearch/blob/master/src/assets/Screenshot%20from%202020-11-16%2007-30-46.png)
+
+  # Contact information
+   Email me at: iraketsia2001@gmail.com
+   Call at : 0787802518
+ # technologies used 
+ angular
+ css 
+ html
+  
+ 
+  If you find a problem with the website, please [report it in the web reposiory](https://github.com/Ketsia-a/githubsearch) 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
 ## Development server
