@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+body {
+    background-image: url(https://wallpaperaccess.com/full/2774333.jpg);
+    background-size: 100%;
+    color: white;
+}
