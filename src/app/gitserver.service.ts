@@ -35,7 +35,6 @@ export class GitserverService {
         this.user.public_repos = response.public_repos
         this.user.followers = response.followers
         this.user.following = response.following
-        this.user.created_at = response.created_at
         resolve()
       },
         error => {
