@@ -9,6 +9,8 @@ import { FormComponent } from './form/form.component';
 import { UserComponent } from './user/user.component';
 import { RepoComponent } from './repo/repo.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { CreatedPipe } from './created.pipe';
+import { StrikethroughDirective } from './strikethrough.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
     FormComponent,
     UserComponent,
     RepoComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    CreatedPipe,
+    StrikethroughDirective
   ],
   imports: [
     BrowserModule,
