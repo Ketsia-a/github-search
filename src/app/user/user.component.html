@@ -1,4 +1,20 @@
-<app-form (emittextsearch)="usersearch($event)">
-</app-form>
-<p>{{user.name}}</p>
-<p>{{user.public_repos}}</p>
+<div class="container">
+    <app-form (emittextsearch)="usersearch($event)"></app-form>
+    <div class="row">
+        <div class="col-md-8">
+            <img src="{{user.avatar_url}}" alt="">
+            <p style="color: beige;">Name: {{user.name}}</p>
+        </div>
+        <div class="col-md-8">
+            <div class="card m-8">
+                <div class="card-title mb-2">
+                    <p>Username: {{user.login}}</p>
+                    <p>Followers: {{user.followers}}</p>
+                    <p>Followering:{{user.following}}</p>
+                    <p>Repository:{{user.public_repos}}</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
