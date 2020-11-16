@@ -1,1 +1,10 @@
-<p>repo works!</p>
+<app-form (emittextsearch)="reposearch($event)"></app-form>
+<div class="card" *ngFor="let repo of repo" class="card m-2" style="width: 22rem;" class="hello">
+    <div class="card-body">
+        <h5 class="card-title">Repo Name:{{repo.name}} </h5>
+        <hr>
+        <div class="card-text">
+            <p>Description :{{repo.description}}</p>
+        </div>
+    </div>
+</div>
