@@ -14,14 +14,13 @@ export class UserComponent implements OnInit {
       ()=>{
         this.user=this.userService.user;
       },
-      
+      (error)=>{
+        console.log(error)
+      }
     )
   }
   ngOnInit(): void {
-    // this.userService.userRequest("Ketsia-a")
-    // this.user = this.userService.user
-    // this.userService.userRequest("Ketsia-a");
-    this.usersearch("Ketsia-a")
-  
+    this.userService.userRequest("Ketsia-a")
+    this.user = this.userService.user
   }
 }

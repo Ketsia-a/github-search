@@ -27,25 +27,24 @@ export class GitserverService {
       created_at: Date
     }
 
-     return new Promise((resolve, reject) => {
+    let promise = new Promise((resolve, reject) => {
       this.http.get<ApiResponse>('https://api.github.com/users/' + textsearch + '?access_token=' + environment.apiKey).toPromise().then(response => {
-        // this.user.avatar_url = response.avatar_url
-        // this.user.name = response.name
-        // this.user.login = response.login
-        // this.user.public_repos = response.public_repos
-        // this.user.followers = response.followers
-        // this.user.following = response.following
-        // this.user.created_at = response.created_at
-        this.user = response;
-        console.log(this.user);
+        this.user.avatar_url = response.avatar_url
+        this.user.name = response.name
+        this.user.login = response.login
+        this.user.public_repos = response.public_repos
+        this.user.followers = response.followers
+        this.user.following = response.following
+        this.user.created_at = response.created_at
         resolve()
       },
-      error=>{
-        console.log(error);
-        reject();
-      })
+        error => {
+        
+          this.user.login = '2020 error'
+          reject(error);
+        })
     })
-  
+    return promise
   }
   RepoRequest(textsearch: string) {
     interface ApiResponse {
@@ -55,9 +54,8 @@ export class GitserverService {
       description: string;
     }
 
-    return new Promise((resolve,reject ) => {
-      
-      this.http.get<ApiResponse[]>('https://api.github.com/users/' + textsearch + '/repos?order=created&sort=asc?access_token='  + environment.apiKey).toPromise().then(response => {
+    let promise = new Promise((resolve, reject) => {
+      this.http.get<ApiResponse[]>('https://api.github.com/users/' + textsearch + '/repos?access_token=' + environment.apiKey).toPromise().then(response => {
         console.log(response[0].id)
         for (let item of response) {
           let a = new Repository(item.id, item.name, item.html_url, item.description)
@@ -67,9 +65,9 @@ export class GitserverService {
       },
         error => {
           console.log(error);
-          reject ();
         })
     })
+    return promise
   }
 }
 
