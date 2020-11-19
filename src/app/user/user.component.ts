@@ -18,7 +18,10 @@ export class UserComponent implements OnInit {
     )
   }
   ngOnInit(): void {
-    this.userService.userRequest("Ketsia-a")
-    this.user = this.userService.user
+    // this.userService.userRequest("Ketsia-a")
+    // this.user = this.userService.user
+    // this.userService.userRequest("Ketsia-a");
+    this.usersearch("Ketsia-a")
+  
   }
 }

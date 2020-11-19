@@ -1,6 +1,6 @@
 <div class="container">
     <app-form (emittextsearch)="usersearch($event)"></app-form>
-    <div class="row">
+    <div class="row" ng-container *ngIf="user">
         <div class="col-md-8">
             <img src="{{user.avatar_url}}" alt="">
             <p style="color: beige;" appStrikethrough>Name: {{user.name}}</p>
